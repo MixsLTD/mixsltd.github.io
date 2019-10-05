@@ -1,2 +1,2 @@
 1.0
-mixs v0.1.apk
+mixs v1.0 (beta build 1).apk
