@@ -1,2 +1,2 @@
 1.3
-mixs v1.3 .apk
+mixs v1.3.apk
