@@ -1,7 +1,7 @@
 <?
 
 $app_id = 7186536;
-$secret_key = 'ваш секретный ключ';
+$secret_key = 'zKCtKAnKsKnf8wzC911B';
 $code = $_GET['code'];
 $redirect = 'htps://mixsltd.github.io/index.php';
 
