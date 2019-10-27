@@ -14,7 +14,7 @@ exit;
 //header('Location: https://oauth.vk.com/access_token?client_id='
 .$app_id.'&client_secret='.$secret_key.'&redirect _uri=https://mol-programmist.ru/socials/vk/index.php&code='.$code);
 //https://oauth.vk.com/authorize?client_id= 7186536&display=mobile&redirect_uri=https://
-mol-programmist.ru/socials/vk/index.php& scope=friends&response_type=code&v=5.95
+mol-programmist.ru/socials/vk/ndex.php& scope=friends&response_type=code&v=5.95
 
 if (isset($_GET['code'])) {
 
