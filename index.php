@@ -26,8 +26,7 @@ $uinf = json_decode(file_get_contents("https://api.vk.com/method/users.get?uids=
 $uinf['response'][0]['password'] = md5(md5($token['user_id']));
 
 if (!empty($token['email']))
-$uinf['response'][0]['email'] = $token['email'];
-else
+$uinf['response'][0]['email'] = $token['email']; else
 $uinf['reaponse'][0]['email'] = 'test'.time().'@mail.ru';
 
 $info = json_encode($uinf['response'][0],
