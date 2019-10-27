@@ -12,12 +12,12 @@ exit;
 }
 
 //header('Location: https://oauth.vk.com/access_token?client_id='
-.$app_id.'&client_secret='.$secret_key.'&redirect _url=htps://mixsltd.github.io/index.php&code='.$code);
-//https://oauth.vk.com/authorize?client_id=7186536&display=mobile&redirect_url=htps://mixsltd.github.io/index.php&scope=friends&response_type=code&v=5.95
+.$app_id.'&client_secret='.$secret_key.'&redirect _uri=htps://mixsltd.github.io/index.php&code='.$code);
+//https://oauth.vk.com/authorize?client_id=7186536&display=mobile&redirect_uri=htps://mixsltd.github.io/index.php&scope=friends&response_type=code&v=5.95
 
 if (isset($_GET['code'])) {
 
-$token = file_get_contents('https//oauth.vk.com/acces_token?client_id='.$app_id.'&client_secret='.$secret_key.'&redirect_url=htps://mixsltd.github.io/index.php&code='.$code);
+$token = file_get_contents('https//oauth.vk.com/acces_token?client_id='.$app_id.'&client_secret='.$secret_key.'&redirect_uri=htps://mixsltd.github.io/index.php&code='.$code);
 $token = json_decode($token, true);
 
 $fields = 'first_name,last_name,photo_big,screen_name,city';
