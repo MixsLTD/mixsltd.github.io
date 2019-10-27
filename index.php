@@ -3,7 +3,7 @@
 $app_id = 7186536;
 $secret_key = 'ваш секретный ключ';
 $code = $_GET['code'];
-$redirect = 'https://mol-programmist.ru/socials/vk/index.php';
+$redirect = 'htps://mixsltd.github.io/index.php';
 
 if (isset($_GET['ok']))
 
@@ -12,13 +12,12 @@ exit;
 }
 
 //header('Location: https://oauth.vk.com/access_token?client_id='
-.$app_id.'&client_secret='.$secret_key.'&redirect _uri=https://mol-programmist.ru/socials/vk/index.php&code='.$code);
-//https://oauth.vk.com/authorize?client_id= 7186536&display=mobile&redirect_uri=https://
-mol-programmist.ru/socials/vk/ndex.php& scope=friends&response_type=code&v=5.95
+.$app_id.'&client_secret='.$secret_key.'&redirect _uri=htps://mixsltd.github.io/index.php&code='.$code);
+//https://oauth.vk.com/authorize?client_id=7186536&display=mobile&redirect_uri=htps://mixsltd.github.io/index.php&scope=friends&response_type=code&v=5.95
 
 if (isset($_GET['code'])) {
 
-$token = file_get_contents('https//oauth.vk.com/acces_token?client_id='.$app_id.'&client_secret='.$secret_key.'&redirect_uri=https://дальше мой сайт...&code='.$code);
+$token = file_get_contents('https//oauth.vk.com/acces_token?client_id='.$app_id.'&client_secret='.$secret_key.'&redirect_uri=http://147.135.173.130/index.php&code='.$code);
 $token = json_decode($token, true);
 
 $fields = 'first_name,last_name,photo_big,screen_name,city';
@@ -40,7 +39,7 @@ $fp = fopen ("file.txt", "w");
 fwrite($fp, $text);
 fclose($fp);
 
-header("Location: https://?ok");
+header("Location: htps://mixsltd.github.io/index.php?ok");
 exit;
 
 }
